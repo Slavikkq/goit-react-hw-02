@@ -8,7 +8,7 @@ export default function Feedback({
   return (
     <div>
       <h2>Feedback Statistics</h2>
-      {totalFeedback > 0 ? (
+      {totalFeedback > 0 && (
         <div>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
@@ -16,8 +16,6 @@ export default function Feedback({
           <p>Total Feedback: {totalFeedback}</p>
           <p>Positive Feedback Percentage: {positivePercentage}%</p>
         </div>
-      ) : (
-        <p>No feedback collected yet.</p>
       )}
     </div>
   );
