@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Feedback from "./components/Feedback/Feedback";
-import Options from "./components/Options/Option";
+import Options from "./components/Option/Option";
 import Notification from "./components/Notification/Notification";
 import Description from "./components/Description/Description";
 
