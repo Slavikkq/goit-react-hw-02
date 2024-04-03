@@ -44,17 +44,14 @@ export default function App() {
         updateFeedback={updateFeedback}
         resetEnabled={totalFeedback > 0}
       />
-      {totalFeedback > 0 ? (
-        <Feedback
-          good={feedback.good}
-          neutral={feedback.neutral}
-          bad={feedback.bad}
-          totalFeedback={totalFeedback}
-          positivePercentage={positivePercentage}
-        />
-      ) : (
-        <Notification />
-      )}
+      <Feedback
+        good={feedback.good}
+        neutral={feedback.neutral}
+        bad={feedback.bad}
+        totalFeedback={totalFeedback}
+        positivePercentage={positivePercentage}
+      />
+      {totalFeedback === 0 && <Notification />}
     </div>
   );
 }
